@@ -1,0 +1,180 @@
+.container {
+  height: auto;
+}
+
+input {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  color: black;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.showed {
+  display: block;
+}
+
+.selectedOption {
+  background-color: #525252;
+  color: white;
+  cursor: default;
+  &:hover {
+    background-color: #525252;
+    color: white;
+    cursor: default;
+  }
+}
+
+ul {
+  display: none;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 24px;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #888585;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.inputContainer {
+  position: relative;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 5px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  position: relative;
+ // height: 34px;
+  width: 90%;
+  padding: 0 5px;
+  cursor: text;
+
+}
+
+.options {
+  font-size: 24px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  cursor: default;
+  min-height: 36px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1px 5px;
+  background-color: #1a1a1a;
+  color: white;
+  white-space: nowrap;
+  gap: 2px;
+}
+
+.name {
+
+}
+
+.optionDelete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.inputWrapper {
+  position: absolute;
+
+  left: 0;
+  padding: 0 5px;
+  width: 100%;
+  input {
+    background-color: transparent;
+  }
+}
+
+.inputWrapperMod {
+  position: static !important;
+  width: fit-content !important;
+  input {
+    max-width: fit-content;
+  }
+}
+
+
+
+.value {
+  position: absolute;
+}
+
+.inputElement {
+  font-size: 24px;
+  background-color: white;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  height: 90%;
+  right: 5px;
+  gap: 5px;
+}
+
+.closeBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #525252;
+  }
+}
+
+.divider {
+  width: 2px;
+  background-color: black;
+}
+
+.downBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #525252;
+  }
+}
+
+
